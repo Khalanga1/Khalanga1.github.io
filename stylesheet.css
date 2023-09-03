@@ -1,0 +1,261 @@
+body{
+    font-family: 'Varela Round';
+    position: relative;
+}
+
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @NAVBAR                                     |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
+
+#nav {
+    background-color: #0C3354;
+}
+
+#nav .nav-link.active {
+    outline: none;
+    width: fit-content;
+  }
+
+@media screen and (min-width: 992px){
+    #nav {
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #nav.navbar-shrink {
+        background-color: #0C3354;
+      }
+
+      #nav.navbar-shrink .nav-link.active {
+        color: white;
+        outline: none;
+        border-bottom: 0.25rem solid rgb(182, 179, 179);
+      }
+}
+
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @HEADER                                     |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
+
+.header{
+    position: relative;
+    width: 100%;
+    min-height: 35rem;
+    height: auto;
+    background: url(images/background2.jpg);
+    
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15rem 0;
+    
+}
+
+@media screen and (max-width: 767px){
+    .header{
+        padding: 10rem 1rem 3rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .header{
+        height: 100vh;
+        padding: 0;
+    }
+
+    .description{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .description{
+        width: 100%;
+    }
+}
+
+.header h1{
+    letter-spacing: 0.8rem; 
+}
+
+.socials{
+    position: fixed;
+    opacity: 0.2;
+    background-color: #f5efef;
+    float: left;
+    transition: 0.5s;
+}
+
+.socials:hover{
+    opacity: 1;
+    background-color: #e9dddd;
+}
+
+@media screen and (max-width: 991px) {
+    .socials{
+        display: none !important;
+    }
+}
+
+.socials a{
+    background: transparent;
+    color: rgb(41, 41, 41);
+}
+
+.mainText{
+    letter-spacing: 2px;
+}
+
+.description{
+    background: #E9D9C8;
+    color: #0C3354;
+    opacity: 0.9;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.header .btn {
+    width: fit-content;
+    background-color: #0C3354;
+    color: white;
+}
+
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @ABOUT                                      |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
+
+.about-section{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+@media screen and (max-width: 767px){
+    .about-section{
+        padding: 3rem 1rem;
+    }
+}
+
+.about-image {
+    padding: 3rem;
+}
+
+.about-text {
+    font-size: larger;
+}
+
+.about-services{
+    margin-top: 7rem;
+}
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @GALLERY                                    |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
+
+.gallery-section {
+    padding-top: 10rem;
+}
+
+
+
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @CONTACT                                    |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
+
+.map{
+    height: 50vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+}
+
+.contacts-section{
+    padding-top: 10rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .map{
+        height: 550px;
+    }
+}
+
+.contacts{
+    padding-top: 0rem;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 767px) {
+    .contacts-section{
+        padding-top: 3rem;
+    }
+
+    .contacts p{
+        line-height: 50%;
+        font-size: smaller;
+    }
+
+    .contacts .fa-phone{
+        font-size: 1rem;
+    }
+
+    .contacts .fa-envelope{
+        font-size: 1rem;
+    }
+
+    .contacts .fa-whatsapp{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .contacts{
+        padding-top: 5rem;
+        text-align: center;
+        justify-content: end;
+    }
+
+    .contacts-section h4{
+        font-size: larger !important;
+    }
+}
+
+.contacts-socials i{
+    color: rgb(41, 41, 41);
+}
+
+
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @FOOTER                                     |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
+
+#footer{
+    background-color: #0C3354;
+    padding: 50px;
+    color: white;
+}
+
+.fa-whatsapp{
+    color: #128C7E;
+}
+
+@media screen and (max-width: 767px){
+    #footer{
+        padding: 30px;
+    }
+}
