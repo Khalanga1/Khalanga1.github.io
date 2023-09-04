@@ -134,15 +134,17 @@ body{
 .about-section{
     padding-top: 10rem;
     padding-bottom: 5rem;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
 }
 
-@media screen and (max-width: 767px){
-    .about-section{
-        padding: 3rem 1rem;
+@media screen and (max-width: 991px){
+    /*.about-section{
+        padding: rem 1rem;
+    }*/
+
+    .about-text{
+        padding-top: 1rem;
     }
+
 }
 
 .about-image {
@@ -154,7 +156,7 @@ body{
 }
 
 .about-services{
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
 /*----------------------------------------------------------------------------------\
 |                                                                                   |
@@ -163,7 +165,14 @@ body{
 \---------------------------------------------------------------------------------*/
 
 .gallery-section {
-    padding-top: 10rem;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+
+.display-images{
+    width: auto;
+    height: 500px;
+    object-fit: cover;
 }
 
 
