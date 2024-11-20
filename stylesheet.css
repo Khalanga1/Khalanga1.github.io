@@ -1,6 +1,11 @@
 body{
-    font-family: 'Varela Round';
+    font-family: 'Playwrite IT Moderna', 'Varela Round';
     position: relative;
+}
+
+hr{  
+    border: 1px solid;
+    border-color: #0C3354; 
 }
 
 /*----------------------------------------------------------------------------------\
@@ -11,6 +16,7 @@ body{
 
 #nav {
     background-color: #0C3354;
+    position: fixed;
 }
 
 #nav .nav-link.active {
@@ -34,6 +40,7 @@ body{
         border-bottom: 0.25rem solid rgb(182, 179, 179);
       }
 }
+
 
 /*----------------------------------------------------------------------------------\
 |                                                                                   |
@@ -132,8 +139,9 @@ body{
 \---------------------------------------------------------------------------------*/
 
 .about-section{
-    padding-top: 10rem;
+    background-image: linear-gradient(#0C3354 40%, white);
     padding-bottom: 5rem;
+    
 }
 
 @media screen and (max-width: 991px){
@@ -148,16 +156,24 @@ body{
 }
 
 .about-image {
-    padding: 3rem;
+    padding: 8rem 3rem 3rem 3rem;
 }
 
-.about-text {
+/*.about-text {
     font-size: larger;
-}
+}*/
 
 .about-services{
-    margin-top: 2rem;
+    margin-top: 2rem;     
+   
 }
+
+.about-services .card{
+    background: #464124b2;
+    color: white;
+}
+
+
 /*----------------------------------------------------------------------------------\
 |                                                                                   |
 |                                       @GALLERY                                    |
@@ -170,11 +186,94 @@ body{
 }
 
 .display-images{
-    min-width: 100%;
-    height: 500px;
+    width: 100%;
+    height: 350px;
     object-fit: cover;
+    overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+    .display-images{
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+}
+
+.imageButtons{
+    font-family: 'Varela Round', 'Playwrite IT Moderna';
+}
+
+.gallery-section img {
+    filter: grayscale(50%);
+}
+
+.gallery-section ul button{
+    color: white;
+    background-color: #0C3354;
+}
+
+.gallery-section ul button:hover {
+    background-color: #464124;
+    color: white;
+}
+
+
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @GALLERY2                                   |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
+
+.gallery2-section {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    margin-top: 6rem;
+}
+
+.gallery2-section ul button{
+    color: white;
+    background-color: #0C3354;
+}
+
+.gallery2-section ul button:hover {
+    background-color: #464124;
+    color: white;
+}
+
+.gallery2-section img {
+    filter: grayscale(50%);
+}
+
+.gallery2-section {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+#nav2 {
+    background-color: #0C3354;
+    position: fixed;
+}
+
+#nav2 .nav-link.active {
+    outline: none;
+    width: fit-content;
+  }
+
+@media screen and (min-width: 992px){
+
+    #nav2.navbar-shrink {
+        background-color: #0C3354;
+      }
+
+      #nav2.navbar-shrink .nav-link.active {
+        color: white;
+        outline: none;
+        border-bottom: 0.25rem solid rgb(182, 179, 179);
+      }
+}
 
 
 /*----------------------------------------------------------------------------------\
@@ -183,15 +282,21 @@ body{
 |                                                                                   |
 \---------------------------------------------------------------------------------*/
 
-.map{
-    height: 50vh;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 5rem;
+
+
+.contact-cards{
+    height: 8rem;
+    width: 15rem;
+}
+
+.contacts-section .card{
+    background-color: #0c3454cb;
+    color:  white;
 }
 
 .contacts-section{
     padding-top: 10rem;
+    background-image: linear-gradient(to top, #464124 10%, white);
 }
 
 @media screen and (min-width: 1200px) {
@@ -256,6 +361,10 @@ body{
     background-color: #0C3354;
     padding: 50px;
     color: white;
+}
+
+.fa-envelope{
+    color: #0C3354;
 }
 
 .fa-whatsapp{
